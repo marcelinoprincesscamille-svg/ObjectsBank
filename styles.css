@@ -1,31 +1,38 @@
 html, body {
-  min-height: 100%;
+  height: 100%;
+  margin: 0;
 }
-
 
 body {
-  background: #112c44;
-  color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url("../img/bg.png"); 
+
+  background-color: #112c44;    
+  background-repeat: repeat-x;
+  background-position: bottom right;
+  background-size: 100% auto;
+
+  color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
-
 header {
-  height: 96px;
+  height: 200px;
   overflow: hidden;
   width: max-content;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 header img {
-  height: 80px; 
+  height: 150px;
   width: auto;
   display: block;
-  margin: 8px auto 0;
+  margin: 12px auto 0;
 }
-
 
 h1 {
   display: inline-block;
@@ -35,7 +42,7 @@ h1 {
   position: relative;
   top: -0.6em;
   font-size: 2.4em;
-  padding: 0 0 0 0.5em;
+  padding-left: 0.5em;
   margin: 0;
 }
 
@@ -45,15 +52,12 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 0 0 0.7em 0;
-  padding: 0;
 }
-
 
 section {
   padding: 1em;
   width: max-content;
-  margin: 0 auto 0 auto;
-  flex: 1;
+  margin: 0 auto;
 }
 
 table {
@@ -79,6 +83,7 @@ th {
   border-bottom: 1px solid #6f7381;
   font-weight: normal;
   color: #b5b6c1;
+  width: 40%;
 }
 
 p {
@@ -92,14 +97,17 @@ p {
 td.overdrawn {
   color: #fca905;
 }
+
 footer {
+  margin-top: auto;
+
   border-top: 1px solid #6f7381;
-  margin-top: 2rem;
-  padding: 1.5rem 0;
   text-align: center;
   color: #b5b6c1;
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  width: 100%;
+
+  width: 90%;
+  padding: 15px;
 }
